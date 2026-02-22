@@ -126,7 +126,6 @@ class EmployeeDetail(mixins.RetrieveModelMixin,mixins.UpdateModelMixin,mixins.De
         return self.destroy(request,pk)
     
 
-
 # Generics
 class Employees(generics.ListCreateAPIView):
     queryset = Employee.objects.all()
