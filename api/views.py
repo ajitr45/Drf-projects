@@ -51,7 +51,7 @@ def studentDetailView(request,pk):
 
         
 
-'''
+
   # Perform CRUD Operations using API views 
 
 class Employees(APIView):
@@ -125,7 +125,7 @@ class EmployeeDetail(mixins.RetrieveModelMixin,mixins.UpdateModelMixin,mixins.De
     def delete(self, request,pk):
         return self.destroy(request,pk)
     
-'''
+
 
 # Generics
 class Employees(generics.ListCreateAPIView):
