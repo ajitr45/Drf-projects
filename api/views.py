@@ -200,7 +200,7 @@ class BlogsView(generics.ListCreateAPIView):
     serializer_class = BlogSerializer
     filter_backends = [SearchFilter, OrderingFilter] #searching and orderfiltering 
     search_fields = ['blog_title', 'blog_body']
-    ordering_fields = ['id']
+    ordering_fields = ['id', 'blog_title']
 
 class CommentsView(generics.ListCreateAPIView):
     queryset = Comment.objects.all()
